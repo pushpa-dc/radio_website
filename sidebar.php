@@ -1,8 +1,8 @@
 <aside>
-<div class="fb-page" data-href="https://www.facebook.com/appharu" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/appharu" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/appharu">Appharu</a></blockquote></div>
+<div class="fb-page" data-href="https://www.facebook.com/narayanifm" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/appharu" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/appharu">Appharu</a></blockquote></div>
 </aside>
 <aside>
-<div class="cat-title">ताजा अपडेट</div>
+<div class="cat-title my-3">ताजा अपडेट</div>
 <?php $args = array('showposts' => 3, 'cat' => ''); $loop = new WP_Query( $args ); while($loop->have_posts()): $loop->the_post(); ?>
 <div class="post-list small-list clearfix">
     <a href="<?php the_permalink();?>">

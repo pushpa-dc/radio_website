@@ -36,17 +36,21 @@
 
           </ul>
         </div>
-        <div class="col-md-6 justify-content-end">
+        <div class="col-md-6 justify-content-end position-relative">
           <ul class="nav justify-content-end">
-
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="bi bi-justify fa-2x  text-white"></i></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="search">
               <a class="nav-link" href="#"> <i class="bi bi-search fa-2x text-white"></i>
               </a>
-            </li>
 
+            </li>
+            <form class="form-inline search-form my-2 my-lg-0" id="sform">
+            <input class="form-control mr-2" name="s" type="search" value="<?php the_search_query(); ?>" placeholder="Search" aria-label="Search">
+
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
           </ul>
         </div>
       </div>
@@ -58,8 +62,10 @@
     <div class="container">
       <div class="row py-4">
         <div class="col-sm-4">
+        <a href="/">
           <?php the_custom_logo();?>
           <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo.png" alt="Logo">
+        </a>
         </div>
         <div class="col-sm-8">
           <?php dynamic_sidebar( 'logo-right' );?>

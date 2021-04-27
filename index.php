@@ -9,32 +9,30 @@
     </div>
 </div>
 <div class="container">
-    <div class="row latest">
+    <div class="row latest my-3">
         <?php get_template_part('home-parts/latest');?>
     </div>
-    <div class="seperator clearfix"></div>
     <div class="row">
         <div class="col-md-8">
             <?php get_template_part('home-parts/main');?>
         </div>
         <div class="col-md-4">
             <?php get_template_part('home-parts/popular');?>
+            <?php get_template_part('home-parts/latest-news');?>
         </div>
     </div>
-    <div class="seperator clearfix"></div>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-12">
-            <?php get_template_part('home-parts/politics');?>
+            <?php //get_template_part('home-parts/politics');?>
         </div>
-    </div>
-    <div class="seperator clearfix"></div>
+    </div> -->
     <div class="row interview">
         <?php get_template_part('home-parts/interview');?>
-    </div>
+        <!-- </div>
     <div class="seperator clearfix"></div>
     <div class="row">
-        <?php get_template_part('home-parts/sports');?>
+        <?php //get_template_part('home-parts/sports');?>
+    </div> -->
     </div>
-</div>
-<!-- .home -->
-<?php get_footer();?>
+    <!-- .home -->
+    <?php get_footer();?>

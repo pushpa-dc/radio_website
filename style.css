@@ -37,7 +37,7 @@ h6 {
 }
 
 .owl-item.active {
-    background: #2f56bf;
+    background: #fdf7f7;
     height: 100%;
 }
 
@@ -200,12 +200,29 @@ p {
     color: #656565;
 }
 
+.cat-wrap {
+    border-bottom: 2px solid #e8e5e5;
+    margin-bottom: 20px;
+}
+
 .cat-title {
-    background: #333;
+    background: #e8e5e5;
     padding: 5px 15px;
-    color: #fff;
+    color: #2f56bf;
     font-size: 20px;
-    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.search-form {
+    position: absolute;
+    top: 110%;
+    display: flex;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
 }
 
 .cat-title a {
@@ -227,7 +244,7 @@ aside .card {
 .post-list,
 .video-list {
     padding: 10px 0px;
-    border-bottom: dashed 1px #ddd !important;
+    border-bottom: solid 1px #ddd !important;
 }
 
 .post-list.card img {
@@ -335,9 +352,9 @@ aside .post-list:last-child,
 }
 
 .custom-list-item {
-    border-bottom: dashed 1px #ddd;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .custom-list .custom-list-item:last-child {
@@ -388,7 +405,22 @@ blockquote:before {
 /*footer*/
 
 .footer-top {
-    background-color: #595959;
+    background-color: #23408e;
+}
+
+.connect i {
+
+    padding: 13px;
+    background: #1b326f;
+    border-radius: 26px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+
+}
+
+.c-title {
+    color: #f7f3f3;
 }
 
 .copyright {

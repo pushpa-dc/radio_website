@@ -40,6 +40,10 @@ $(function () {
 
     );
 
+    $("#search").click(function () {
+        $("#sform").toggleClass("show")
+    })
+
 
 
 });
